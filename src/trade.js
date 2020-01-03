@@ -32,8 +32,8 @@ async function getRate() {
 }
 
 async function buildSwapTx(priceRoute) {
-  const destAmount = priceRoute.amount;
-  return paraSwap.buildTx(srcToken, destToken, srcAmount, destAmount, priceRoute, senderAddress, referrer);
+  const minDestinationAmount = new BigNumber(priceRoute.amount).multipliedBy(1 - DEFAULT_ALLOWED_SLIPPAGE).toFixed();
+  return paraSwap.buildTx(srcToken, destToken, srcAmount, minDestinationAmount, priceRoute, senderAddress, referrer);
 }
 
 async function buildPayTx(priceRoute) {
