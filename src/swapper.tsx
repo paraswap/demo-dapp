@@ -297,7 +297,7 @@ export default class Swapper extends React.Component<any, IState> {
   }
 
   render() {
-    const {tokens, tokenFrom, tokenTo, srcAmount, priceRoute, payTo, loading, error, transactionHash} = this.state;
+    const {tokens, tokenFrom, tokenTo, srcAmount, priceRoute, payTo, user, loading, error, transactionHash} = this.state;
 
     const options = tokens.map((t: Token) => ({
       key: t.symbol,
@@ -319,6 +319,19 @@ export default class Swapper extends React.Component<any, IState> {
               <Icon name='exclamation'/>
               <Message.Content>
                 <Message.Content>{error}</Message.Content>
+              </Message.Content>
+            </Message>
+          ) : null
+        }
+
+        {
+          (user && user.address) ? (
+            <Message info>
+              <Message.Header>
+                Connected
+              </Message.Header>
+              <Message.Content>
+                {user.address}
               </Message.Content>
             </Message>
           ) : null
