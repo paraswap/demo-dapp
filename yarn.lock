@@ -86,7 +86,7 @@
     "@ethersproject/logger" ">=5.0.0-beta.129"
     "@ethersproject/strings" ">=5.0.0-beta.130"
 
-"@ethersproject/keccak256@>=5.0.0-beta.127", "@ethersproject/keccak256@^5.0.0-beta.130":
+"@ethersproject/keccak256@>=5.0.0-beta.127":
   version "5.0.0-beta.131"
   resolved "https://registry.yarnpkg.com/@ethersproject/keccak256/-/keccak256-5.0.0-beta.131.tgz#b5778723ee75208065b9b9ad30c71d480f41bb31"
   integrity sha512-KQnqMwGV0IMOjAr/UTFO8DuLrmN1uaMvcV3zh9hiXhh3rCuY+WXdeUh49w1VQ94kBKmaP0qfGb7z4SdhUWUHjw==
@@ -440,37 +440,6 @@
     "@types/uglify-js" "*"
     "@types/webpack-sources" "*"
     source-map "^0.6.0"
-
-"@web3-react/abstract-connector@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@web3-react/abstract-connector/-/abstract-connector-6.0.2.tgz#df4b5af805364283fdfb54e1174ced537783d790"
-  integrity sha512-0Jl+ahg0Iub/Xfnmm9aMiaNY0IO61H+gItAvHMsC76GDxmfns5gq8qSXBJSXbWGpoy/TxufACzETT8fGDtMzDQ==
-  dependencies:
-    "@web3-react/types" "^6.0.2"
-
-"@web3-react/core@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@web3-react/core/-/core-6.0.2.tgz#3824187557159b1015d861bd6bdbb8a6a13209d0"
-  integrity sha512-VepdSh5h2CMV7BuJo8UbuRPICoyKUl+00dA8T9SP5rGUsaeN3z8y18x/otYgY9xD5NJQl8r+wcQ9234pYPxbJQ==
-  dependencies:
-    "@ethersproject/keccak256" "^5.0.0-beta.130"
-    "@web3-react/types" "^6.0.2"
-    tiny-invariant "^1.0.6"
-    tiny-warning "^1.0.3"
-
-"@web3-react/injected-connector@^6.0.3":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@web3-react/injected-connector/-/injected-connector-6.0.3.tgz#48b615c95129c63a1c20fb292534836c4059103e"
-  integrity sha512-4mjafFRDewgSIdvlzrgDTWsKmOstkYo20Bor+OEh3XFWPxQ4Mk/CMBOQwzaehcxP1qV06mTWg+GDwoKI9zxNpw==
-  dependencies:
-    "@web3-react/abstract-connector" "^6.0.2"
-    "@web3-react/types" "^6.0.2"
-    tiny-warning "^1.0.3"
-
-"@web3-react/types@^6.0.2":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@web3-react/types/-/types-6.0.2.tgz#fe451383cc6fd88128c7608e3cdfe3b0c42caff3"
-  integrity sha512-zDPcjWdYONgpL6o3SQPMQE+pIDBcIsWMP/FqFRIFmPjB9h+ONHXNID74pf3h++gZGfIkl9cDtTvF8kQudn5Lew==
 
 "@webassemblyjs/ast@1.8.5":
   version "1.8.5"
@@ -8377,16 +8346,6 @@ timers-browserify@^2.0.4:
   integrity sha512-60aV6sgJ5YEbzUdn9c8kYGIqOubPoUdqQCul3SBAsRCZ40s6Y5cMcrW4dt3/k/EsbLVJNl9n6Vz3fTc+k2GeKQ==
   dependencies:
     setimmediate "^1.0.4"
-
-tiny-invariant@^1.0.6:
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/tiny-invariant/-/tiny-invariant-1.0.6.tgz#b3f9b38835e36a41c843a3b0907a5a7b3755de73"
-  integrity sha512-FOyLWWVjG+aC0UqG76V53yAWdXfH8bO6FNmyZOuUrzDzK8DI3/JRY25UD7+g49JWM1LXwymsKERB+DzI0dTEQA==
-
-tiny-warning@^1.0.3:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/tiny-warning/-/tiny-warning-1.0.3.tgz#94a30db453df4c643d0fd566060d60a875d84754"
-  integrity sha512-lBN9zLN/oAf68o3zNXYrdCt1kP8WsiGW8Oo2ka41b2IM5JL/S1CTyX1rW0mb/zSuJun0ZUrDxx4sqvYS2FWzPA==
 
 to-absolute-glob@^2.0.0:
   version "2.0.2"
